@@ -5,8 +5,8 @@ sudo docker run -v /home/KULLANICI_ADINIZ/DOSYANIZ/:/git -v /home/KULLANICI_ADIN
 echo "##"
 echo "Dosyalar bağlandı."
 sudo docker ps -a > cikti.txt
-var= $(sed -n '2'p cikti.txt)  "";
-dizi =($var);
+var=$(sed -n '2'p cikti.txt)  "";
+dizi=($var);
 uzunluk=${#dizi};
 echo "Konteynır ismi alındı";
 echo "##";
